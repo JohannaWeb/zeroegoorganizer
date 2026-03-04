@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zero Ego Organizer</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Fraunces:ital,opsz,wght@0,9..144,100;1,9..144,300&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0d0d0d;
+    color: #f0ebe3;
+    font-family: 'DM Mono', monospace;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .poster {
+    width: 680px;
+    border: 1.5px solid #333;
+    position: relative;
+    overflow: hidden;
+    background: #0d0d0d;
+  }
+
+  .top-bar {
+    background: #c8421a;
+    padding: 0.45rem 2rem;
+    font-size: 0.58rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #f0ebe3;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero {
+    padding: 3.5rem 2.5rem 2rem;
+    border-bottom: 1px solid #222;
+  }
+
+  .label {
+    font-size: 0.55rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 1.2rem;
+  }
+
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 4.2rem;
+    font-weight: 100;
+    line-height: 0.9;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.3rem;
+  }
+
+  h1 em {
+    font-style: italic;
+    color: #c8421a;
+  }
+
+  .subtitle {
+    font-size: 0.65rem;
+    color: #555;
+    letter-spacing: 0.1em;
+    margin-top: 1.2rem;
+    text-transform: uppercase;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .col {
+    padding: 2rem 2.5rem;
+  }
+
+  .col:first-child {
+    border-right: 1px solid #222;
+  }
+
+  .col-label {
+    font-size: 0.52rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #c8421a;
+    border-bottom: 1px solid #222;
+    padding-bottom: 0.6rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .item {
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 1.1rem;
+    align-items: flex-start;
+  }
+
+  .dot {
+    width: 4px;
+    height: 4px;
+    background: #c8421a;
+    border-radius: 50%;
+    margin-top: 0.45rem;
+    flex-shrink: 0;
+  }
+
+  .item-text {
+    font-size: 0.75rem;
+    line-height: 1.7;
+    color: #aaa;
+    font-weight: 300;
+  }
+
+  .item-text strong {
+    color: #f0ebe3;
+    font-weight: 500;
+  }
+
+  .full-row {
+    border-top: 1px solid #222;
+    padding: 1.8rem 2.5rem;
+    font-family: 'Fraunces', serif;
+    font-size: 1.05rem;
+    font-style: italic;
+    line-height: 1.6;
+    color: #777;
+    font-weight: 300;
+    letter-spacing: -0.01em;
+  }
+
+  .full-row span {
+    color: #c8421a;
+  }
+
+  .bottom-bar {
+    background: #111;
+    border-top: 1px solid #222;
+    padding: 0.8rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.52rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #444;
+  }
+</style>
+</head>
+<body>
+<div class="poster">
+
+  <div class="top-bar">
+    <span>Zero Ego Organizer</span>
+    <span>Field Manual · v1.0</span>
+  </div>
+
+  <div class="hero">
+    <div class="label">A new way to show up for collective work</div>
+    <h1>Show up.<br><em>Or say so.</em></h1>
+    <div class="subtitle">The only rule: your absence is data. give it.</div>
+  </div>
+
+  <div class="grid">
+    <div class="col">
+      <div class="col-label">What this is</div>
+      <div class="item"><div class="dot"></div><div class="item-text"><strong>Not about guilt.</strong> About logistics. Your empty chair is a variable no one budgeted for.</div></div>
+      <div class="item"><div class="dot"></div><div class="item-text"><strong>Not about ego.</strong> Yours or mine. No drama. Just signal vs. silence.</div></div>
+      <div class="item"><div class="dot"></div><div class="item-text"><strong>Not a performance.</strong> You don't have to be fine. You have to be <em>findable.</em></div></div>
+    </div>
+
+    <div class="col">
+      <div class="col-label">The actual protocol</div>
+      <div class="item"><div class="dot"></div><div class="item-text"><strong>Coming?</strong> Nothing required. See you there.</div></div>
+      <div class="item"><div class="dot"></div><div class="item-text"><strong>Not coming?</strong> One message. "Can't make it." Done. That's the whole thing.</div></div>
+      <div class="item"><div class="dot"></div><div class="item-text"><strong>Monitoring a channel?</strong> Be honest about it. Silence is also an answer — a bad one.</div></div>
+      <div class="item"><div class="dot"></div><div class="item-text"><strong>Burning out?</strong> Say that too. We'll figure it out. We can't plan around a ghost.</div></div>
+    </div>
+  </div>
+
+  <div class="full-row">
+    "Taking care of yourself is valid. <span>Making it invisible</span> is where the group pays the price."
+  </div>
+
+  <div class="bottom-bar">
+    <span>Zero Fear · Zero Ego · Full Presence or Full Honesty</span>
+    <span>✕</span>
+    <span>Big Moat Industries</span>
+  </div>
+
+</div>
+</body>
+</html>
